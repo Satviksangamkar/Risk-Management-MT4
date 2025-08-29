@@ -1,0 +1,226 @@
+{"timestamp": "2025-08-29 17:42:55,153", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 17:42:55,153", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 17:42:55,153", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 17:42:55,165", "level": "INFO", "logger": "__main__", "message": "Starting server with configuration:"}
+{"timestamp": "2025-08-29 17:42:55,165", "level": "INFO", "logger": "__main__", "message": "   - Host: 0.0.0.0"}
+{"timestamp": "2025-08-29 17:42:55,165", "level": "INFO", "logger": "__main__", "message": "   - Port: 8000"}
+{"timestamp": "2025-08-29 17:42:55,168", "level": "INFO", "logger": "__main__", "message": "   - Debug: False"}
+{"timestamp": "2025-08-29 17:42:55,168", "level": "INFO", "logger": "__main__", "message": "   - Reload: False"}
+{"timestamp": "2025-08-29 17:42:55,203", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 17:42:55,203", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 17:42:55,203", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 17:42:55,213", "level": "INFO", "logger": "main", "message": "Starting MT4 FastAPI Backend"}
+{"timestamp": "2025-08-29 17:42:55,213", "level": "INFO", "logger": "main", "message": "Upload directory ready: uploads"}
+{"timestamp": "2025-08-29 17:42:55,214", "level": "INFO", "logger": "main", "message": "Application startup complete"}
+{"timestamp": "2025-08-29 17:43:05,285", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Risk calculation request: TradeType.BUY @ 1.25"}
+{"timestamp": "2025-08-29 17:43:05,286", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Risk calculator: R-Multiple=2.00, Risk Level=MEDIUM"}
+{"timestamp": "2025-08-29 17:43:07,332", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Risk calculation request: TradeType.SELL @ 1.3"}
+{"timestamp": "2025-08-29 17:43:07,332", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Risk calculator: R-Multiple=2.00, Risk Level=MEDIUM"}
+{"timestamp": "2025-08-29 17:43:09,362", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Received file upload: 10.htm"}
+{"timestamp": "2025-08-29 17:43:09,366", "level": "INFO", "logger": "app.services.mt4_service", "message": "Processing MT4 statement file: C:\Users\HP\AppData\Local\Temp\10.htm"}
+{"timestamp": "2025-08-29 17:43:09,388", "level": "INFO", "logger": "app.services.parsing.mt4_parser_service", "message": "Starting MT4 HTML statement parsing"}
+{"timestamp": "2025-08-29 17:43:09,457", "level": "INFO", "logger": "app.services.parsing.mt4_parser_service", "message": "Successfully parsed 14 trades"}
+{"timestamp": "2025-08-29 17:43:09,458", "level": "WARNING", "logger": "app.services.mt4_service", "message": "Data validation issues: ['Trade 8: Invalid stop loss: 0.0', 'Trade 8: Sell trade stop loss should be above entry price']"}
+{"timestamp": "2025-08-29 17:43:09,458", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Calculating metrics for 14 trades"}
+{"timestamp": "2025-08-29 17:43:09,459", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Calculating risk analysis for 3 open trades"}
+{"timestamp": "2025-08-29 17:43:09,460", "level": "INFO", "logger": "app.services.mt4_service", "message": "Calculated risk analysis for 3 open trades"}
+{"timestamp": "2025-08-29 17:43:09,461", "level": "INFO", "logger": "app.services.mt4_service", "message": "Successfully processed 14 trades in 0.10s"}
+{"timestamp": "2025-08-29 17:43:09,461", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "File analysis completed in 0.10s"}
+{"timestamp": "2025-08-29 17:43:46,588", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Risk calculation request: TradeType.BUY @ 1.25"}
+{"timestamp": "2025-08-29 17:43:46,588", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Risk calculator: R-Multiple=2.00, Risk Level=MEDIUM"}
+{"timestamp": "2025-08-29 17:43:48,623", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Risk calculation request: TradeType.SELL @ 1.3"}
+{"timestamp": "2025-08-29 17:43:48,623", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Risk calculator: R-Multiple=2.00, Risk Level=MEDIUM"}
+{"timestamp": "2025-08-29 17:43:50,663", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Received file upload: 10.htm"}
+{"timestamp": "2025-08-29 17:43:50,665", "level": "INFO", "logger": "app.services.mt4_service", "message": "Processing MT4 statement file: C:\Users\HP\AppData\Local\Temp\10.htm"}
+{"timestamp": "2025-08-29 17:43:50,681", "level": "INFO", "logger": "app.services.parsing.mt4_parser_service", "message": "Starting MT4 HTML statement parsing"}
+{"timestamp": "2025-08-29 17:43:50,723", "level": "INFO", "logger": "app.services.parsing.mt4_parser_service", "message": "Successfully parsed 14 trades"}
+{"timestamp": "2025-08-29 17:43:50,724", "level": "WARNING", "logger": "app.services.mt4_service", "message": "Data validation issues: ['Trade 8: Invalid stop loss: 0.0', 'Trade 8: Sell trade stop loss should be above entry price']"}
+{"timestamp": "2025-08-29 17:43:50,724", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Calculating metrics for 14 trades"}
+{"timestamp": "2025-08-29 17:43:50,726", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Calculating risk analysis for 3 open trades"}
+{"timestamp": "2025-08-29 17:43:50,726", "level": "INFO", "logger": "app.services.mt4_service", "message": "Calculated risk analysis for 3 open trades"}
+{"timestamp": "2025-08-29 17:43:50,727", "level": "INFO", "logger": "app.services.mt4_service", "message": "Successfully processed 14 trades in 0.06s"}
+{"timestamp": "2025-08-29 17:43:50,727", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "File analysis completed in 0.06s"}
+{"timestamp": "2025-08-29 18:17:31,769", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:17:31,770", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:17:31,770", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:17:31,778", "level": "INFO", "logger": "__main__", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:17:31,778", "level": "INFO", "logger": "__main__", "message": "Starting server with configuration:"}
+{"timestamp": "2025-08-29 18:17:31,779", "level": "INFO", "logger": "__main__", "message": "   - Host: 0.0.0.0"}
+{"timestamp": "2025-08-29 18:17:31,779", "level": "INFO", "logger": "__main__", "message": "   - Port: 5501"}
+{"timestamp": "2025-08-29 18:17:31,779", "level": "INFO", "logger": "__main__", "message": "   - Debug: False"}
+{"timestamp": "2025-08-29 18:17:31,779", "level": "INFO", "logger": "__main__", "message": "   - Reload: False"}
+{"timestamp": "2025-08-29 18:17:31,850", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:17:31,851", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:17:31,851", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:17:31,858", "level": "INFO", "logger": "main", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:17:31,861", "level": "INFO", "logger": "main", "message": "Starting MT4 FastAPI Backend"}
+{"timestamp": "2025-08-29 18:17:31,862", "level": "INFO", "logger": "main", "message": "Upload directory ready: uploads"}
+{"timestamp": "2025-08-29 18:17:31,862", "level": "INFO", "logger": "main", "message": "Application startup complete"}
+{"timestamp": "2025-08-29 18:17:40,459", "level": "WARNING", "logger": "app.core.errors", "message": "HTTP Exception: 404 - Not Found"}
+{"timestamp": "2025-08-29 18:17:42,481", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Risk calculation request: TradeType.BUY @ 1.2"}
+{"timestamp": "2025-08-29 18:17:42,482", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Risk calculator: R-Multiple=2.00, Risk Level=MEDIUM"}
+{"timestamp": "2025-08-29 18:17:44,520", "level": "WARNING", "logger": "app.core.errors", "message": "Validation error: [{'type': 'missing', 'loc': ('query', 'file_path'), 'msg': 'Field required', 'input': None}]"}
+{"timestamp": "2025-08-29 18:18:57,747", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Risk calculation request: TradeType.BUY @ 1.2"}
+{"timestamp": "2025-08-29 18:18:57,747", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Risk calculator: R-Multiple=2.00, Risk Level=MEDIUM"}
+{"timestamp": "2025-08-29 18:18:59,763", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Received file path analysis request: D:\D Drive\ULTIMATE CALCULATOR\10.htm"}
+{"timestamp": "2025-08-29 18:18:59,764", "level": "INFO", "logger": "app.services.mt4_service", "message": "Processing MT4 statement file: D:\D Drive\ULTIMATE CALCULATOR\10.htm"}
+{"timestamp": "2025-08-29 18:18:59,764", "level": "INFO", "logger": "app.services.parsing.mt4_parser_service", "message": "Starting MT4 HTML statement parsing"}
+{"timestamp": "2025-08-29 18:18:59,812", "level": "INFO", "logger": "app.services.parsing.mt4_parser_service", "message": "Successfully parsed 14 trades"}
+{"timestamp": "2025-08-29 18:18:59,812", "level": "WARNING", "logger": "app.services.mt4_service", "message": "Data validation issues: ['Trade 8: Invalid stop loss: 0.0', 'Trade 8: Sell trade stop loss should be above entry price']"}
+{"timestamp": "2025-08-29 18:18:59,813", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Calculating metrics for 14 trades"}
+{"timestamp": "2025-08-29 18:18:59,814", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Calculating risk analysis for 3 open trades"}
+{"timestamp": "2025-08-29 18:18:59,815", "level": "INFO", "logger": "app.services.mt4_service", "message": "Calculated risk analysis for 3 open trades"}
+{"timestamp": "2025-08-29 18:18:59,815", "level": "INFO", "logger": "app.services.mt4_service", "message": "Successfully processed 14 trades in 0.05s"}
+{"timestamp": "2025-08-29 18:18:59,815", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Path analysis completed in 0.05s"}
+{"timestamp": "2025-08-29 18:19:16,243", "level": "WARNING", "logger": "app.core.errors", "message": "HTTP Exception: 404 - Not Found"}
+{"timestamp": "2025-08-29 18:19:32,097", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Received file upload: 10.htm"}
+{"timestamp": "2025-08-29 18:19:32,104", "level": "INFO", "logger": "app.services.mt4_service", "message": "Processing MT4 statement file: C:\Users\HP\AppData\Local\Temp\10.htm"}
+{"timestamp": "2025-08-29 18:19:32,126", "level": "INFO", "logger": "app.services.parsing.mt4_parser_service", "message": "Starting MT4 HTML statement parsing"}
+{"timestamp": "2025-08-29 18:19:32,182", "level": "INFO", "logger": "app.services.parsing.mt4_parser_service", "message": "Successfully parsed 14 trades"}
+{"timestamp": "2025-08-29 18:19:32,182", "level": "WARNING", "logger": "app.services.mt4_service", "message": "Data validation issues: ['Trade 8: Invalid stop loss: 0.0', 'Trade 8: Sell trade stop loss should be above entry price']"}
+{"timestamp": "2025-08-29 18:19:32,183", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Calculating metrics for 14 trades"}
+{"timestamp": "2025-08-29 18:19:32,185", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Calculating risk analysis for 3 open trades"}
+{"timestamp": "2025-08-29 18:19:32,185", "level": "INFO", "logger": "app.services.mt4_service", "message": "Calculated risk analysis for 3 open trades"}
+{"timestamp": "2025-08-29 18:19:32,186", "level": "INFO", "logger": "app.services.mt4_service", "message": "Successfully processed 14 trades in 0.08s"}
+{"timestamp": "2025-08-29 18:19:32,186", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "File analysis completed in 0.09s"}
+{"timestamp": "2025-08-29 18:19:41,450", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Received file upload: 10.htm"}
+{"timestamp": "2025-08-29 18:19:41,451", "level": "INFO", "logger": "app.services.mt4_service", "message": "Processing MT4 statement file: C:\Users\HP\AppData\Local\Temp\10.htm"}
+{"timestamp": "2025-08-29 18:19:41,474", "level": "INFO", "logger": "app.services.parsing.mt4_parser_service", "message": "Starting MT4 HTML statement parsing"}
+{"timestamp": "2025-08-29 18:19:41,523", "level": "INFO", "logger": "app.services.parsing.mt4_parser_service", "message": "Successfully parsed 14 trades"}
+{"timestamp": "2025-08-29 18:19:41,523", "level": "WARNING", "logger": "app.services.mt4_service", "message": "Data validation issues: ['Trade 8: Invalid stop loss: 0.0', 'Trade 8: Sell trade stop loss should be above entry price']"}
+{"timestamp": "2025-08-29 18:19:41,524", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Calculating metrics for 14 trades"}
+{"timestamp": "2025-08-29 18:19:41,525", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Calculating risk analysis for 3 open trades"}
+{"timestamp": "2025-08-29 18:19:41,525", "level": "INFO", "logger": "app.services.mt4_service", "message": "Calculated risk analysis for 3 open trades"}
+{"timestamp": "2025-08-29 18:19:41,526", "level": "INFO", "logger": "app.services.mt4_service", "message": "Successfully processed 14 trades in 0.07s"}
+{"timestamp": "2025-08-29 18:19:41,526", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "File analysis completed in 0.08s"}
+{"timestamp": "2025-08-29 18:20:23,312", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Risk calculation request: TradeType.BUY @ 1000.0"}
+{"timestamp": "2025-08-29 18:20:23,312", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Risk calculator: R-Multiple=2.00, Risk Level=MEDIUM"}
+{"timestamp": "2025-08-29 18:26:34,230", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Received file upload: 10.htm"}
+{"timestamp": "2025-08-29 18:26:34,230", "level": "ERROR", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "File analysis error: 'NoneType' object has no attribute 'lower'"}
+Traceback (most recent call last):
+  File "d:\D Drive\ULTIMATE CALCULATOR\mt4_fastapi_backend\app\api\v1\endpoints\mt4_analysis.py", line 68, in analyze_mt4_file
+    validate_content_type(file.content_type)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "d:\D Drive\ULTIMATE CALCULATOR\mt4_fastapi_backend\app\api\dependencies\services.py", line 51, in validate_content_type
+    if "html" not in content_type.lower():
+                     ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+{"timestamp": "2025-08-29 18:26:34,239", "level": "WARNING", "logger": "app.core.errors", "message": "HTTP Exception: 500 - File analysis failed"}
+{"timestamp": "2025-08-29 18:30:08,637", "level": "WARNING", "logger": "app.core.errors", "message": "HTTP Exception: 405 - Method Not Allowed"}
+{"timestamp": "2025-08-29 18:34:52,018", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Received file upload: 10.htm"}
+{"timestamp": "2025-08-29 18:34:52,018", "level": "ERROR", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "File analysis error: 'NoneType' object has no attribute 'lower'"}
+Traceback (most recent call last):
+  File "d:\D Drive\ULTIMATE CALCULATOR\mt4_fastapi_backend\app\api\v1\endpoints\mt4_analysis.py", line 68, in analyze_mt4_file
+    validate_content_type(file.content_type)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "d:\D Drive\ULTIMATE CALCULATOR\mt4_fastapi_backend\app\api\dependencies\services.py", line 51, in validate_content_type
+    if "html" not in content_type.lower():
+                     ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+{"timestamp": "2025-08-29 18:34:52,023", "level": "WARNING", "logger": "app.core.errors", "message": "HTTP Exception: 500 - File analysis failed"}
+{"timestamp": "2025-08-29 18:39:51,019", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Risk calculation request: TradeType.BUY @ 1.25"}
+{"timestamp": "2025-08-29 18:39:51,019", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Risk calculator: R-Multiple=2.00, Risk Level=MEDIUM"}
+{"timestamp": "2025-08-29 18:42:04,693", "level": "INFO", "logger": "main", "message": "Shutting down MT4 FastAPI Backend"}
+{"timestamp": "2025-08-29 18:42:08,516", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:42:08,516", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:42:08,517", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:42:08,526", "level": "INFO", "logger": "__main__", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:42:08,527", "level": "INFO", "logger": "__main__", "message": "Starting server with configuration:"}
+{"timestamp": "2025-08-29 18:42:08,527", "level": "INFO", "logger": "__main__", "message": "   - Host: 0.0.0.0"}
+{"timestamp": "2025-08-29 18:42:08,528", "level": "INFO", "logger": "__main__", "message": "   - Port: 5501"}
+{"timestamp": "2025-08-29 18:42:08,528", "level": "INFO", "logger": "__main__", "message": "   - Debug: False"}
+{"timestamp": "2025-08-29 18:42:08,528", "level": "INFO", "logger": "__main__", "message": "   - Reload: False"}
+{"timestamp": "2025-08-29 18:42:08,584", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:42:08,584", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:42:08,585", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:42:08,592", "level": "INFO", "logger": "main", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:42:08,594", "level": "INFO", "logger": "main", "message": "Starting MT4 FastAPI Backend"}
+{"timestamp": "2025-08-29 18:42:08,595", "level": "INFO", "logger": "main", "message": "Upload directory ready: uploads"}
+{"timestamp": "2025-08-29 18:42:08,595", "level": "INFO", "logger": "main", "message": "Application startup complete"}
+{"timestamp": "2025-08-29 18:42:28,979", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Received file upload: 10.htm"}
+{"timestamp": "2025-08-29 18:42:28,980", "level": "ERROR", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "File analysis error: 'NoneType' object has no attribute 'lower'"}
+Traceback (most recent call last):
+  File "d:\D Drive\ULTIMATE CALCULATOR\mt4_fastapi_backend\app\api\v1\endpoints\mt4_analysis.py", line 68, in analyze_mt4_file
+    validate_content_type(file.content_type)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "d:\D Drive\ULTIMATE CALCULATOR\mt4_fastapi_backend\app\api\dependencies\services.py", line 51, in validate_content_type
+    if "html" not in content_type.lower():
+                     ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+{"timestamp": "2025-08-29 18:42:28,982", "level": "WARNING", "logger": "app.core.errors", "message": "HTTP Exception: 500 - File analysis failed"}
+{"timestamp": "2025-08-29 18:43:44,140", "level": "INFO", "logger": "main", "message": "Shutting down MT4 FastAPI Backend"}
+{"timestamp": "2025-08-29 18:44:25,685", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:44:25,685", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:44:25,685", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:44:25,694", "level": "INFO", "logger": "__main__", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:44:25,696", "level": "INFO", "logger": "__main__", "message": "Starting server with configuration:"}
+{"timestamp": "2025-08-29 18:44:25,696", "level": "INFO", "logger": "__main__", "message": "   - Host: 0.0.0.0"}
+{"timestamp": "2025-08-29 18:44:25,697", "level": "INFO", "logger": "__main__", "message": "   - Port: 5501"}
+{"timestamp": "2025-08-29 18:44:25,697", "level": "INFO", "logger": "__main__", "message": "   - Debug: False"}
+{"timestamp": "2025-08-29 18:44:25,697", "level": "INFO", "logger": "__main__", "message": "   - Reload: False"}
+{"timestamp": "2025-08-29 18:44:25,743", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:44:25,743", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:44:25,743", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:44:25,751", "level": "INFO", "logger": "main", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:44:25,753", "level": "INFO", "logger": "main", "message": "Starting MT4 FastAPI Backend"}
+{"timestamp": "2025-08-29 18:44:25,754", "level": "INFO", "logger": "main", "message": "Upload directory ready: uploads"}
+{"timestamp": "2025-08-29 18:44:25,754", "level": "INFO", "logger": "main", "message": "Application startup complete"}
+{"timestamp": "2025-08-29 18:45:52,988", "level": "INFO", "logger": "main", "message": "Simple analysis completed: 14 trades found, profit: -286.17"}
+{"timestamp": "2025-08-29 18:46:26,063", "level": "INFO", "logger": "main", "message": "Shutting down MT4 FastAPI Backend"}
+{"timestamp": "2025-08-29 18:46:29,177", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:46:29,178", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:46:29,178", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:46:29,189", "level": "INFO", "logger": "__main__", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:46:29,191", "level": "INFO", "logger": "__main__", "message": "Starting server with configuration:"}
+{"timestamp": "2025-08-29 18:46:29,192", "level": "INFO", "logger": "__main__", "message": "   - Host: 0.0.0.0"}
+{"timestamp": "2025-08-29 18:46:29,192", "level": "INFO", "logger": "__main__", "message": "   - Port: 5501"}
+{"timestamp": "2025-08-29 18:46:29,192", "level": "INFO", "logger": "__main__", "message": "   - Debug: False"}
+{"timestamp": "2025-08-29 18:46:29,192", "level": "INFO", "logger": "__main__", "message": "   - Reload: False"}
+{"timestamp": "2025-08-29 18:46:29,247", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:46:29,248", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:46:29,248", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:46:29,259", "level": "INFO", "logger": "main", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:46:29,263", "level": "INFO", "logger": "main", "message": "Starting MT4 FastAPI Backend"}
+{"timestamp": "2025-08-29 18:46:29,264", "level": "INFO", "logger": "main", "message": "Upload directory ready: uploads"}
+{"timestamp": "2025-08-29 18:46:29,265", "level": "INFO", "logger": "main", "message": "Application startup complete"}
+{"timestamp": "2025-08-29 18:46:46,307", "level": "INFO", "logger": "main", "message": "Simple analysis completed: 14 trades found, profit: -286.17"}
+{"timestamp": "2025-08-29 18:47:00,015", "level": "INFO", "logger": "app.api.v1.endpoints.mt4_analysis", "message": "Risk calculation request: TradeType.BUY @ 1.25"}
+{"timestamp": "2025-08-29 18:47:00,016", "level": "INFO", "logger": "app.services.calculations.mt4_calculator_service", "message": "Risk calculator: R-Multiple=2.00, Risk Level=MEDIUM"}
+{"timestamp": "2025-08-29 18:47:02,071", "level": "INFO", "logger": "main", "message": "Simple analysis completed: 14 trades found, profit: -286.17"}
+{"timestamp": "2025-08-29 18:50:58,428", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:50:58,428", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:50:58,429", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:50:58,437", "level": "INFO", "logger": "__main__", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:50:58,439", "level": "INFO", "logger": "__main__", "message": "Starting server with configuration:"}
+{"timestamp": "2025-08-29 18:50:58,439", "level": "INFO", "logger": "__main__", "message": "   - Host: 0.0.0.0"}
+{"timestamp": "2025-08-29 18:50:58,439", "level": "INFO", "logger": "__main__", "message": "   - Port: 5501"}
+{"timestamp": "2025-08-29 18:50:58,439", "level": "INFO", "logger": "__main__", "message": "   - Debug: False"}
+{"timestamp": "2025-08-29 18:50:58,439", "level": "INFO", "logger": "__main__", "message": "   - Reload: False"}
+{"timestamp": "2025-08-29 18:50:58,482", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:50:58,483", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:50:58,483", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:50:58,491", "level": "INFO", "logger": "main", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:50:58,493", "level": "INFO", "logger": "main", "message": "Starting MT4 FastAPI Backend"}
+{"timestamp": "2025-08-29 18:50:58,493", "level": "INFO", "logger": "main", "message": "Upload directory ready: uploads"}
+{"timestamp": "2025-08-29 18:50:58,494", "level": "INFO", "logger": "main", "message": "Application startup complete"}
+{"timestamp": "2025-08-29 18:51:05,682", "level": "INFO", "logger": "main", "message": "Simple analysis completed: 14 trades found, profit: -286.17"}
+{"timestamp": "2025-08-29 18:52:01,556", "level": "INFO", "logger": "main", "message": "Simple analysis completed: 14 trades found, profit: -286.17"}
+{"timestamp": "2025-08-29 18:58:53,851", "level": "INFO", "logger": "main", "message": "Shutting down MT4 FastAPI Backend"}
+{"timestamp": "2025-08-29 18:58:56,622", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:58:56,623", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:58:56,623", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:58:56,634", "level": "INFO", "logger": "__main__", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:58:56,636", "level": "INFO", "logger": "__main__", "message": "Starting server with configuration:"}
+{"timestamp": "2025-08-29 18:58:56,636", "level": "INFO", "logger": "__main__", "message": "   - Host: 0.0.0.0"}
+{"timestamp": "2025-08-29 18:58:56,637", "level": "INFO", "logger": "__main__", "message": "   - Port: 5501"}
+{"timestamp": "2025-08-29 18:58:56,637", "level": "INFO", "logger": "__main__", "message": "   - Debug: False"}
+{"timestamp": "2025-08-29 18:58:56,638", "level": "INFO", "logger": "__main__", "message": "   - Reload: False"}
+{"timestamp": "2025-08-29 18:58:56,699", "level": "INFO", "logger": "app.core.logging", "message": "MT4 FastAPI Backend logging initialized"}
+{"timestamp": "2025-08-29 18:58:56,699", "level": "INFO", "logger": "app.core.logging", "message": "Log level: INFO"}
+{"timestamp": "2025-08-29 18:58:56,700", "level": "INFO", "logger": "app.core.logging", "message": "Debug mode: False"}
+{"timestamp": "2025-08-29 18:58:56,709", "level": "INFO", "logger": "main", "message": "Mounted frontend static files from: d:\D Drive\ULTIMATE CALCULATOR\mt4_frontend"}
+{"timestamp": "2025-08-29 18:58:56,712", "level": "INFO", "logger": "main", "message": "Starting MT4 FastAPI Backend"}
+{"timestamp": "2025-08-29 18:58:56,713", "level": "INFO", "logger": "main", "message": "Upload directory ready: uploads"}
+{"timestamp": "2025-08-29 18:58:56,713", "level": "INFO", "logger": "main", "message": "Application startup complete"}
+{"timestamp": "2025-08-29 19:01:02,428", "level": "INFO", "logger": "main", "message": "Simple analysis completed: 14 trades found, profit: -286.17"}
+{"timestamp": "2025-08-29 19:02:01,324", "level": "INFO", "logger": "main", "message": "Simple analysis completed: 14 trades found, profit: -286.17"}

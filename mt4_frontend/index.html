@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MT4 Calculator - Trading Analysis Platform</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <h1>MT4 Calculator</h1>
+                </div>
+                <div class="header-info">
+                    <div class="status-indicator" id="serverStatus">
+                        <i class="fas fa-circle"></i>
+                        <span>Checking...</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-upload"></i> Upload MT4 Statement</h2>
+                    <p>Upload your MT4 HTML statement file for comprehensive trading analysis</p>
+                </div>
+
+                <div class="upload-container">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <div class="upload-text">
+                            <h3>Drag & Drop your MT4 file here</h3>
+                            <p>or <button class="upload-btn" id="uploadBtn">Browse Files</button></p>
+                            <p class="file-info">Supports .htm and .html files up to 50MB</p>
+                        </div>
+                        <input type="file" id="fileInput" accept=".htm,.html" hidden>
+                    </div>
+
+                    <!-- Analysis Options -->
+                    <div class="analysis-options">
+                        <h3><i class="fas fa-cog"></i> Analysis Options</h3>
+                        <div class="options-grid">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="calculateRMultiple" checked>
+                                <span class="checkmark"></span>
+                                Calculate R-Multiple Analysis
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="includeOpenTrades" checked>
+                                <span class="checkmark"></span>
+                                Include Open Trades
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="analyze-btn" id="analyzeBtn" disabled>
+                        <i class="fas fa-chart-bar"></i>
+                        Analyze Statement
+                    </button>
+                </div>
+            </section>
+
+            <!-- Progress Section -->
+            <section class="progress-section" id="progressSection" style="display: none;">
+                <div class="progress-container">
+                    <div class="progress-header">
+                        <h3><i class="fas fa-spinner fa-spin"></i> Analyzing Your MT4 Statement</h3>
+                        <p>Processing trading data and calculating comprehensive metrics...</p>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">Initializing analysis...</div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="section-header">
+                    <h2><i class="fas fa-chart-line"></i> Analysis Results</h2>
+                    <div class="results-actions">
+                        <button class="action-btn" id="exportBtn">
+                            <i class="fas fa-download"></i> Export
+                        </button>
+                        <button class="action-btn" id="newAnalysisBtn">
+                            <i class="fas fa-plus"></i> New Analysis
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Results Grid -->
+                <div class="results-grid" id="resultsGrid">
+                    <!-- Results will be populated here -->
+                </div>
+            </section>
+
+            <!-- Risk Calculator Section -->
+            <section class="risk-calculator-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-calculator"></i> Risk Calculator</h2>
+                    <p>Plan your trades with advanced risk management calculations</p>
+                </div>
+
+                <div class="calculator-container">
+                    <div class="calculator-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="entryPrice">Entry Price</label>
+                                <input type="number" id="entryPrice" step="0.00001" placeholder="1.2500">
+                            </div>
+                            <div class="form-group">
+                                <label for="stopLoss">Stop Loss</label>
+                                <input type="number" id="stopLoss" step="0.00001" placeholder="1.2450">
+                            </div>
+                            <div class="form-group">
+                                <label for="takeProfit">Take Profit</label>
+                                <input type="number" id="takeProfit" step="0.00001" placeholder="1.2600">
+                            </div>
+                            <div class="form-group">
+                                <label for="tradeType">Trade Type</label>
+                                <select id="tradeType">
+                                    <option value="buy">BUY</option>
+                                    <option value="sell">SELL</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="accountBalance">Account Balance</label>
+                                <input type="number" id="accountBalance" step="0.01" placeholder="10000.00">
+                            </div>
+                            <div class="form-group">
+                                <label for="riskPercentage">Risk %</label>
+                                <input type="number" id="riskPercentage" step="0.1" min="0.1" max="10" value="2" placeholder="2.0">
+                            </div>
+                            <div class="form-group">
+                                <label for="positionSize">Position Size (optional)</label>
+                                <input type="number" id="positionSize" step="0.01" placeholder="0.10">
+                            </div>
+                        </div>
+                        
+                        <button class="calculate-btn" id="calculateRiskBtn">
+                            <i class="fas fa-calculator"></i>
+                            Calculate Risk
+                        </button>
+                    </div>
+
+                    <div class="risk-results" id="riskResults" style="display: none;">
+                        <!-- Risk calculation results will be populated here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Toast Notifications -->
+        <div class="toast-container" id="toastContainer"></div>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+            <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Processing...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
